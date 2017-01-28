@@ -36,7 +36,7 @@ module.exports = {
       repo : "git@github.com:terciodemelo/tercio.me.git",
       path : "/var/www/production",
       "pre-deploy": "echo $PATH",
-      "post-deploy" : "npm install && npm build"
+      "post-deploy" : "npm install && npm run build"
     },
   }
 }
