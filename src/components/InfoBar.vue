@@ -1,22 +1,19 @@
 <template>
   <div id="info-bar">
-    <profile-pic></profile-pic>
-    <info-piece :title="'Tercio de Melo'"></info-piece>
+    <abstract></abstract>
     <contact></contact>
   </div>
 </template>
 
 <script>
-import ProfilePic from './info/ProfilePic'
-import InfoPiece from './info/InfoPiece'
 import Contact from './info/Contact'
+import Abstract from './info/Abstract'
 
 export default {
   name: 'info-bar',
   components: {
-    ProfilePic,
-    InfoPiece,
-    Contact
+    Contact,
+    Abstract
   }
 }
 </script>
