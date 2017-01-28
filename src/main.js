@@ -5,7 +5,7 @@ import VueRouter from 'vue-router'
 import VueResource from 'vue-resource'
 
 import App from './App'
-import Hello from './components/Hello.vue'
+import Home from './components/Home.vue'
 
 import 'bulma/css/bulma.css'
 import 'font-awesome/css/font-awesome.min.css'
@@ -19,7 +19,7 @@ const router = new VueRouter({
   routes: [
     {
       path: '/',
-      component: Hello
+      component: Home
     }
   ]
 })
