@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <p><img src="../assets/tercio-profile.jpg" alt=""></p>
+    <profile-pic></profile-pic>
     <p>Tercio de Melo</p>
     <p>email: terciodemelo@gmail.com</p>
 
@@ -25,9 +25,14 @@
 </template>
 
 <script>
-export default {
-  name: 'home'
-}
+  import ProfilePic from './info/ProfilePic'
+
+  export default {
+    name: 'home',
+    components: {
+      ProfilePic
+    }
+  }
 </script>
 
 <style scoped>
