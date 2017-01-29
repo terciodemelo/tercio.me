@@ -28,4 +28,12 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
+
+a:hover {
+  color: black !important;
+}
+
+a {
+  color: #3498db !important;
+}
 </style>
