@@ -4,9 +4,10 @@
       <profile-pic></profile-pic>
       <h3 class="title">Tercio de Melo</h3>
       <p>
-        Full-stack/DevOps/SRE Engineer, guitar player,
-        Loremaster of Warcraft, and passionate for programming
-        languages
+        Full-stack/DevOps/SRE Engineer, 
+        passionate for programming languages,
+        Loremaster of Warcraft,
+        and guitar player
       </p>
     </div>
   </div>
@@ -35,6 +36,6 @@ export default {
 }
 
 p {
-  margin: 10px 10px 0 10px !important;
+  margin: 10px 15px 0 15px !important;
 }
 </style>
