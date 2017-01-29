@@ -18,7 +18,7 @@ export default {
   padding-top: 50px;
   margin-bottom: 50px;
   height: 100px;
-  background-color: #26C6DA;
+  background-color: #2980b9;
   border-radius: 5px 5px 0px 0px;
   box-shadow: inherit;
 }
