@@ -1,5 +1,5 @@
 <template>
-  <div class="profile-pic">
+  <div id="profile-pic">
     <img src="../../assets/tercio-profile.jpg" alt="">
   </div>
 </template>
@@ -11,11 +11,20 @@ export default {
 </script>
 
 <style scoped>
+#profile-pic {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+  margin-bottom: 50px;
+  height: 100px;
+  background-color: #444;
+}
+
 img {
   position: relative;
   border: 3px solid white;
   border-radius: 100%;
-  box-shadow: 0 0 0 1px lightgrey;
-  height: 200px;
+  height: 100px;
 }
 </style>

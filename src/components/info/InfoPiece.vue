@@ -1,5 +1,5 @@
 <template>
-  <div class="info-piece">
+  <div id="info-piece">
     <p>
       <span v-if="title">{{ title }}</span>
       <a v-if="link" :href="link">
