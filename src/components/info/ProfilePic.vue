@@ -19,6 +19,8 @@ export default {
   margin-bottom: 50px;
   height: 100px;
   background-color: #444;
+  border-radius: 5px 5px 0px 0px;
+  box-shadow: inherit;
 }
 
 img {
