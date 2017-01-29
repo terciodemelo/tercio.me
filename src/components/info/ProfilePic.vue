@@ -15,10 +15,11 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 50px;
+  padding-top: 100px;
   margin-bottom: 50px;
-  height: 100px;
+  height: 150px;
   background-color: #2980b9;
+  background-image: url("../../assets/profile-bg-1.jpg");
   border-radius: 5px 5px 0px 0px;
   box-shadow: inherit;
 }
