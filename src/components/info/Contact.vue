@@ -40,7 +40,7 @@ export default {
 }
 
 .box {
-  padding: 20px 20px 20px 20px !important;
+  padding: 15px 15px 15px 10px !important;
 }
 
 h4 {
