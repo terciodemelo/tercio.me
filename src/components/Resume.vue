@@ -1,6 +1,8 @@
 <template>
   <div id="resume">
-    Resumé
+    <div class="box">
+      Resumé
+    </div>
   </div>
 </template>
 
@@ -10,6 +12,17 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+#resume {
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
 
+.box {
+  width: 95%;
+  margin-left: 15px;
+}
 </style>

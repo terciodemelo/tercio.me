@@ -16,10 +16,11 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 #app {
+  width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
