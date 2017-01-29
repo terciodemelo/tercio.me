@@ -4,13 +4,13 @@
       <div class="menu">
         <ul class="menu-list">
           <li>
-            <router-link to="/">
+            <router-link to="/" :class="isCurrent('/')">
               <i class="fa fa-angle-right"></i>
               Blog
             </router-link>
           </li>
           <li>
-            <router-link to="/">
+            <router-link to="/resume" :class="isCurrent('/resume')">
               <i class="fa fa-angle-right"></i>
               Resumé / CV
             </router-link>
@@ -28,6 +28,11 @@ export default {
   name: 'pages',
   components: {
     InfoBox
+  },
+  methods: {
+    isCurrent (resource) {
+      return resource === this.$route.path ? 'current' : ''
+    }
   }
 }
 </script>

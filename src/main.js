@@ -5,7 +5,8 @@ import VueRouter from 'vue-router'
 import VueResource from 'vue-resource'
 
 import App from './App'
-import Home from './components/Home.vue'
+import Blog from './components/Blog.vue'
+import Resume from './components/Resume.vue'
 
 import 'bulma/css/bulma.css'
 import 'font-awesome/css/font-awesome.min.css'
@@ -17,10 +18,8 @@ Vue.use(VueRouter)
 const router = new VueRouter({
   mode: 'history',
   routes: [
-    {
-      path: '/',
-      component: Home
-    }
+    { path: '/', component: Blog },
+    { path: '/resume', component: Resume }
   ]
 })
 
