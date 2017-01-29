@@ -22,4 +22,8 @@ export default {
 #info-bar {
   margin-left: 30px;
 }
+
+#abstract {
+  margin-bottom: 15px;
+}
 </style>

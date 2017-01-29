@@ -1,5 +1,3 @@
-![](https://travis-ci.org/terciodemelo/tercio.me.svg?branch=master)
-
 # tercio.me
 
 > Personal website
