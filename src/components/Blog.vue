@@ -1,6 +1,8 @@
 <template>
   <div id="blog">
-    Blog
+    <div class="box">
+      Blog
+    </div>
   </div>
 </template>
 
@@ -11,4 +13,16 @@ export default {
 </script>
 
 <style scoped>
+#blog {
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+.box {
+  width: 95%;
+  margin-left: 15px;
+}
 </style>
