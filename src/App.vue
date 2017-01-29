@@ -29,11 +29,11 @@ export default {
   margin-top: 60px;
 }
 
-a:hover {
+a:hover:not(.button):not(.panel-block) {
   color: black !important;
 }
 
-a {
+a:not(.button):not(.panel-block) {
   color: #3498db !important;
 }
 </style>

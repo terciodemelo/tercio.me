@@ -1,7 +1,7 @@
 <template>
   <div id="info-box">
     <div class="box">
-      <h4 class="title is-4">{{ title }}</h4>
+      <p class="menu-label title is-6">{{ title }}</p>
       <slot></slot>
     </div>
   </div>

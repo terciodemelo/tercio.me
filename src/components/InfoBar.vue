@@ -1,7 +1,7 @@
 <template>
   <div id="info-bar">
     <abstract></abstract>
-    <links></links>
+    <pages></pages>
     <contact></contact>
     <about></about>
   </div>
@@ -11,7 +11,7 @@
 import Contact from './info/Contact'
 import Abstract from './info/Abstract'
 import About from './info/About'
-import Links from './info/Links'
+import Pages from './info/Pages'
 
 export default {
   name: 'info-bar',
@@ -19,7 +19,7 @@ export default {
     Contact,
     Abstract,
     About,
-    Links
+    Pages
   }
 }
 </script>
