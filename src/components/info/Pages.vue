@@ -4,7 +4,7 @@
       <div class="menu">
         <ul class="menu-list">
           <li>
-            <router-link to="/" :class="isCurrent('/')">
+            <router-link to="/blog" :class="isCurrent('/blog')">
               <i class="fa fa-angle-right"></i>
               Blog
             </router-link>

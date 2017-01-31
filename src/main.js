@@ -18,8 +18,9 @@ Vue.use(VueRouter)
 const router = new VueRouter({
   mode: 'history',
   routes: [
-    { path: '/', component: Blog },
-    { path: '/resume', component: Resume }
+    { path: '/blog', component: Blog },
+    { path: '/resume', component: Resume },
+    { path: '*', redirect: '/resume' }
   ]
 })
 
