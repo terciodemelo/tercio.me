@@ -1,5 +1,5 @@
 <template>
-  <div id="info-box">
+  <div class="info-box">
     <div class="box">
       <p class="menu-label title is-6">{{ title }}</p>
       <slot></slot>
@@ -15,10 +15,11 @@ export default {
 </script>
 
 <style scoped>
-#info-box {
+.info-box {
   display: flex;
   flex-direction: column;
   text-align: left;
+  color: #555;
 }
 
 .box {
