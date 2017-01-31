@@ -3,6 +3,7 @@
     <div class="box">
       <experience v-for="experience in experiences" 
                   :title="experience.title"
+                  :company="experience.company"
                   :where="experience.where"
                   :period="experience.period"
                   :description="experience.description"
@@ -24,10 +25,10 @@ export default {
     return {
       experiences: [
         {
-          title: `Full-Stack developer and Cloud Computing Engineer,
-            LSD-UFCG`,
-          where: 'Campina Grande - PB, Brazil',
-          period: 'Aug 2016 - Present',
+          title: 'Full-Stack developer and Cloud Computing Engineer',
+          company: 'Distributed Systems Laboratory - UFCG',
+          where: 'Campina Grande – PB, Brazil',
+          period: 'Aug 2016 – Present',
           description: `
             Technical leader, in charge of integration between Lenovo LXCA
             and RedHat ManageIQ; also responsible for the development of a
@@ -38,9 +39,10 @@ export default {
           ]
         },
         {
-          title: 'Full-Stack developer and DevOps, Freelancer ',
-          where: 'Campina Grande - PB, Brazil',
-          period: 'Jul 2016 - Dec 2016',
+          title: 'Full-Stack developer and DevOps',
+          company: 'Freelancer',
+          where: 'Campina Grande – PB, Brazil',
+          period: 'Jul 2016 – Dec 2016',
           description: `
             Responsible for development and maintenance of web services
             and SaaS projects, including containerization and building
@@ -50,9 +52,10 @@ export default {
           ]
         },
         {
-          title: 'Back-end Software Developer Intern, TFG Co',
-          where: 'São Paulo - SP, Brazil',
-          period: 'Feb 2015 - Jun 2016',
+          title: 'Back-end Software Developer Intern',
+          company: 'TFG Co',
+          where: 'São Paulo – SP, Brazil',
+          period: 'Feb 2015 – Jun 2016',
           description: `
             Responsible for building and enhancement of SaaS and web
             services with heavy traffic requirements; also configuring
@@ -70,9 +73,10 @@ export default {
           ]
         },
         {
-          title: 'Software Developer, SPLab',
-          where: 'Campina Grande - PB, Brazil',
-          period: 'Feb 2014 - Dec 2014',
+          title: 'Software Developer',
+          company: 'SPLab',
+          where: 'Campina Grande – PB, Brazil',
+          period: 'Feb 2014 – Dec 2014',
           description: `
             Responsible for building embedded systems for Ingenico
             terminals, Android applications, and dev tools`,
@@ -98,5 +102,9 @@ export default {
 .box {
   width: 95%;
   margin-left: 15px;
+}
+
+.experience {
+  margin-bottom: 50px;
 }
 </style>
