@@ -27,6 +27,7 @@ export default {
 <style scoped>
 #info-bar {
   margin-left: 30px;
+  width: 250px;
 }
 
 #info-bar > div {
