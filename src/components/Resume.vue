@@ -1,9 +1,12 @@
 <template>
   <div id="resume">
     <div class="box">
+      <h3 class="title is-3">Experience</h3>
+
       <experience v-for="experience in experiences" 
                   :title="experience.title"
                   :company="experience.company"
+                  :company_url="experience.company_url"
                   :where="experience.where"
                   :period="experience.period"
                   :description="experience.description"
@@ -27,6 +30,7 @@ export default {
         {
           title: 'Full-Stack developer and Cloud Computing Engineer',
           company: 'Distributed Systems Laboratory - UFCG',
+          company_url: 'https://www.lsd.ufcg.edu.br/#/lab/english',
           where: 'Campina Grande – PB, Brazil',
           period: 'Aug 2016 – Present',
           description: `
@@ -54,6 +58,7 @@ export default {
         {
           title: 'Back-end Software Developer Intern',
           company: 'TFG Co',
+          company_url: 'https://www.tfgco.com/',
           where: 'São Paulo – SP, Brazil',
           period: 'Feb 2015 – Jun 2016',
           description: `
@@ -75,6 +80,7 @@ export default {
         {
           title: 'Software Developer',
           company: 'SPLab',
+          company_url: 'http://splab.computacao.ufcg.edu.br/welcome-to-splab',
           where: 'Campina Grande – PB, Brazil',
           period: 'Feb 2014 – Dec 2014',
           description: `
@@ -102,6 +108,13 @@ export default {
 .box {
   width: 95%;
   margin-left: 15px;
+}
+
+.box > .title {
+  color: #555;
+  font-family: serif;
+  text-align: left;
+  margin: 15px 0 30px 13px;
 }
 
 .experience {

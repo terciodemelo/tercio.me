@@ -1,7 +1,10 @@
 <template>
   <div class="experience">
     <p class="exp-title">{{ title }}</p>
-    <p class="exp-company">{{ company }}</p>
+    <p class="exp-company">
+      <a v-if="company_url" :href="company_url">{{ company }}</a>
+      <span v-else>{{company}}</span>
+    </p>
 
     <p class="exp-period-where">
       <span class="exp-period">{{ period }}</span>
@@ -21,7 +24,8 @@
 export default {
   name: 'experience',
   props: [
-    'title', 'company', 'where', 'period', 'description', 'technologies'
+    'title', 'company', 'company_url', 'where', 'period',
+    'description', 'technologies'
   ],
   computed: {
     techs () {
@@ -40,7 +44,7 @@ export default {
   font-family: serif;
   font-style: italic;
   font-size: larger;
-  margin-bottom: 5px !important;
+  margin-bottom: 0px !important;
 }
 
 .exp-company, 
@@ -54,7 +58,6 @@ export default {
 
 .exp-description {
   color: #555;
-  text-align: justify;
 }
 
 .exp-technologies {
